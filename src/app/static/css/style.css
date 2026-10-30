@@ -1,0 +1,10 @@
+.navbar {
+    display: flex;
+    gap: 25px;
+    padding: 16px;
+    background: rgb(169, 169, 247);
+}
+
+.page_index {
+    text-align: center;
+}
