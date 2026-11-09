@@ -2,4 +2,22 @@
 
 
 {% block title %}Добавить задачу{% endblock title %}
-{% block content %}Добавить задачу{% endblock content %}
+{% block content %}
+  Добавить задачу
+  <form method="post">
+    {{ form.hidden_tag() }}
+
+    <p>
+      {{ form.name.label }}
+      {{ form.name() }}
+    </p>
+    <p>
+      {{ form.task.label }}
+      {{ form.task() }}
+    </p>
+    <p>
+      {{ form.submit.label }}
+      {{ form.submit() }}
+    </p>
+  </form>
+{% endblock content %}

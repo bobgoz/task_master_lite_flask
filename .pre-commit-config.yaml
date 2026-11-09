@@ -1,0 +1,14 @@
+repos:
+  # - repo: https://github.com/pre-commit/pre-commit-hooks
+  #   rev: v3.3.0
+  #   hooks:
+  #     - id: check-docstring-style
+  #     - id: check-json
+  #     - id: check-yaml
+  #     - id: trailing-whitespace
+
+
+  - repo: https://github.com/aristanetworks/j2lint.git
+    rev: v1.3.0
+    hooks: 
+      - id: j2lint
