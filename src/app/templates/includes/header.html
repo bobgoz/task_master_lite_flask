@@ -1,6 +1,22 @@
-<nav class="navbar">
-  <a href="{{ url_for('index') }}">Главная страница</a>
-  <a href="{{ url_for('task.add_task') }}">Добавить задачу</a>
-  <a href="{{ url_for('auth.login') }}">Войти</a>
-  <a href="">О сайте</a>
+<nav class="navbar sticky-top navbar-expand-lg bg-primary shadow-lg rounded" data-bs-theme="dark">
+  <div class="container-md ">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="navbar-brand" href="{{ url_for('index') }}">FlaskNote</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('task.add_task') }}">Добавить задачу</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('auth.login') }}">Войти</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">О сайте</a>
+      </li>
+    </ul>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+      <button class="btn btn-dark" type="submit">Поиск</button>
+    </form>
+  </div>
 </nav>

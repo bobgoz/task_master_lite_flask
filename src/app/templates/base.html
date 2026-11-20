@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}{% endblock title %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  {{ bootstrap.load_css() }}
 </head>
 <body>
-  <main>
+  <main class="fw-bold">
     {% include 'includes/header.html' %}
     {% block content %}{% endblock content %}
   </main>
+  {{ bootstrap.load_js() }}
 </body>
 </html>

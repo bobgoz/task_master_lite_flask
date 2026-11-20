@@ -1,6 +1,7 @@
 """Главное управление приложением."""
 
 from flask import Flask, render_template
+from flask_bootstrap import Bootstrap5
 
 from app.auth.routers import router as auth_router
 from app.config import config
@@ -10,6 +11,7 @@ app = Flask(__name__)
 app.config.from_object(config)
 app.register_blueprint(auth_router)
 app.register_blueprint(task_router)
+bootstrap = Bootstrap5(app)
 print(app.config)
 
 
